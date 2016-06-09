@@ -35,7 +35,7 @@
 
         // Define position of the thumbnail image
         if (!post.excerpt && !post.link) {
-            thumbnailImagePosition = "bottom";
+            thumbnailImagePosition = "right";
         } else if (thumbnailImageUrl !== null) {
             if (post.thumbnailImagePosition && post.thumbnailImagePosition.length)  {
                 thumbnailImagePosition = post.thumbnailImagePosition;
@@ -95,11 +95,19 @@
                 </div>
             <% } else { %>
                 <div class="postShorten-content" itemprop="articleBody">
-                    <%- postContent %>
+                    <% if (post.content.length > 200) { %>
+                    <%- postContent.replace(/<(?:.|\n)*?>/gm, '').substr(0, 200) %>...<br>
+                    <% } else { %>
+                    <%- postContent %>                    
+                    <% } %>
                     <% if (theme.image_gallery) { %>
                         <%- partial('post/gallery', {photos: post.photos, post: post})%>
                     <% } %>
-                    <% if (__('post.comment_and_share')) { %>
+                    <% if (post.content.length > 200 && __('post.read_more')) { %>
+                       <a href="<%- url_for(post.path) %>" class="postShorten-excerpt_link link">
+                            <%- __('post.read_more') %>
+                        </a>
+                    <% } else if (__('post.comment_and_share')) { %>
                         <p>
                             <a href="<%- url_for(post.path + '#post-footer') %>" class="postShorten-excerpt_link link">
                                 <%- __('post.comment_and_share') %>

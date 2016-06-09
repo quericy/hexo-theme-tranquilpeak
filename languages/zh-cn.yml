@@ -1,5 +1,5 @@
 # 在所有地方显示的 date 格式化
-date_format: "MMM DD, YYYY"
+date_format: "YYYY 年 MM 月 DD 日"
 
 global:
     home: "首页"
@@ -57,6 +57,6 @@ post:
 
 author:
     # 你的个人简介 (支持 Markdown 和 HTML 语法)
-    bio: ""
+    bio: "以白羽为衣，于天际起舞。"
     # 你的工作简介
-    job: ""
+    job: "PHP Developer"

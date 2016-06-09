@@ -37,15 +37,15 @@ sidebar:
             icon: home
         categories:
             title: global.categories
-            url: /all-categories
+            url: /categories
             icon: bookmark
         tags:
             title: global.tags
-            url: /all-tags
+            url: /tags
             icon: tags
         archives:
             title: global.archives
-            url: /all-archives
+            url: /archives
             icon: archive
         search:
             title: global.search
@@ -55,21 +55,23 @@ sidebar:
             class: st-search-show-outputs
         about:
             title: global.about
-            url: /#about
+            url: /about
             icon: question
     author_links:
-        # github:
-        #     title: global.github
-        #     url: https://github.com/
-        #     icon: github
+        github:
+             title: global.github
+             url: https://github.com/quericy
+             icon: github
+             rel: external nofollow
         # stack_overflow:
         #     title: global.stack_overflow
         #     url: http://stackoverflow.com/users
         #     icon: stack-overflow
-        # twitter:
-        #     title: global.twitter
-        #     url: https://twitter.com/
-        #     icon: twitter
+         twitter:
+             title: global.twitter
+             url: https://twitter.com/quericy
+             icon: twitter
+             rel: external nofollow
         # facebook:
         #     title: global.facebook
         #     url: https://facebook.com/
@@ -112,15 +114,15 @@ header:
 # Author
 # Your biography and your job is editable in each languages files in `languages` folder
 author:
-    email:
-    location:
+    email: cy@quericy.me
+    location: Fujian China
     # Your profile picture located in folder `source/_images/` (development)
     # or in `source/assets/images/` (production)
     # or you can use an external url
     # Overwritten by your gravatar image if `gravatar_email` is filled
-    picture:
+    picture: quericy_avatar.jpeg
     # Your Twitter username without the @. E.g : `tranquilpeak`
-    twitter:
+    twitter: https://twitter.com/quericy
     # Your google plus profile id. E.g : `+Tranquilpeak` or `123812884128439`
     google_plus:
 
@@ -132,7 +134,7 @@ author:
 # 2: Display medium sidebar on large and medium screen and header bar on small screen and medium sidebar is swiped (default)
 # 3: Display header bar on all screens and large sidebar is swiped
 # 4: Display header bar on all screens and medium sidebar is swiped
-sidebar_behavior: 2
+sidebar_behavior: 1
 # Hide sidebar on all article page to let article take full width to improve reading, and enjoy wide images and cover images. (true: enable, false: disable)
 clear_reading: true
 # Display thumbnail image of each post on index pages (false: disabled, true: enabled)
@@ -151,9 +153,9 @@ auto_thumbnail_image: true
 # Current image is on AWS S3 and delivered by AWS CloudFront.
 # Otherwise put your image in folder `source/_images/` (development)  or in `source/assets/images/` if you can't or don't want to build the theme,
 # and use relative url : `your-image.png`
-cover_image: cover.jpg
+cover_image: https://dn-quericyblog.qbox.me/hexo/blog-background-image.jpg
 # Your favicon located in folder `source/_images/` (development) or in `source/assets/images/` (production)
-favicon:
+favicon: favicon.ico
 # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
 image_gallery: true
 # Pagination behavior of archive, category and tag pages (false: pagination disabled, true: pagination enabled)
