@@ -67,7 +67,7 @@ sidebar:
         #     title: global.stack_overflow
         #     url: http://stackoverflow.com/users
         #     icon: stack-overflow
-         twitter:
+        twitter:
              title: global.twitter
              url: https://twitter.com/quericy
              icon: twitter
