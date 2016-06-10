@@ -34,12 +34,10 @@
         }
 
         // Define position of the thumbnail image
-        if (!post.excerpt && !post.link) {
-            thumbnailImagePosition = "right";
-        } else if (thumbnailImageUrl !== null) {
-            if (post.thumbnailImagePosition && post.thumbnailImagePosition.length)  {
+        if (thumbnailImageUrl !== null && post.thumbnailImagePosition && post.thumbnailImagePosition.length)  {
                 thumbnailImagePosition = post.thumbnailImagePosition;
-            }
+        }else{
+                thumbnailImagePosition = "right";
         }
 
         // Generate and insert table of contents in post content
