@@ -33,7 +33,7 @@
             <%- partial('post/gallery') %>
             <blockquote>
             <p>如未特殊注明，本站文章均为原创，转载请注明： 转载自<a href="<%= config.url %>" >quericy</a>的<a href="<%- url_for('archives/') %>">博客</a></p>
-            <p>本文链接地址: <a href="<%- url_for(config.url + post.path) %>">CentOS/Ubuntu一键安装IPSEC/IKEV2 VPN服务器</a></p>
+            <p>本文链接地址: <a href="<%- url_for(config.url + '/' + post.path) %>">CentOS/Ubuntu一键安装IPSEC/IKEV2 VPN服务器</a></p>
             </blockquote>
         </div>
     </div>
