@@ -36,8 +36,10 @@
         // Define position of the thumbnail image
         if (thumbnailImageUrl !== null && post.thumbnailImagePosition && post.thumbnailImagePosition.length)  {
                 thumbnailImagePosition = post.thumbnailImagePosition;
-        }else{
+        } else if (post.thumbnailImage !== null && post.thumbnailImage !== undefined ) {
                 thumbnailImagePosition = "right";
+        } else {
+                thumbnailImagePosition = "bottom";
         }
 
         // Generate and insert table of contents in post content
