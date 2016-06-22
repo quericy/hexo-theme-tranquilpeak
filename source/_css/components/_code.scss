@@ -58,7 +58,7 @@ figure.highlight,
         width:   100%;
 
         pre {
-            max-width:  calc(#{map-get($main-content, 'max-width')} - 50px);
+            //max-width:  calc(#{map-get($main-content, 'max-width')} - 50px);
             overflow-x: auto;
             overflow-y: hidden;
         }
