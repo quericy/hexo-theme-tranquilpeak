@@ -15,9 +15,13 @@
             <i class="fa fa-remove"></i>
         </div>
         <% if (authorPicture) { %>
+        <a href="<%= config.url %>">
             <img id="about-card-picture" src="<%= authorPicture %>"/>
+        </a>
         <% } %>
+        <a href="<%= config.url %>">
             <h4 id="about-card-name"><%= config.author %></h4>
+        </a>
         <% if (__('author.bio')) { %>
             <h5 id="about-card-bio"><%- markdown(__('author.bio')) %></h5>
         <% } %>
