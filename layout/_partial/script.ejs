@@ -1,5 +1,5 @@
 <!--SCRIPTS-->
-<%- js('assets/js/scrip-03efqwdqwaobprwvtyy5z8u70ihwgss4meupmqld86n1mpdajmmblhaz9eii.min.js') %>
+<%- js('assets/js/scrip-sfkh6w7zfdhlr0etpdupnu6kudffuwoxxtwtnxhsickm3vh60nd8kzjnneqh.min.js') %>
 <!--SCRIPTS END-->
 <% if (post.comments) { %>
     <% if (theme.disqus_shortname) { %>
@@ -21,7 +21,7 @@
                 (d.head || d.body).appendChild(s);
             })();
         </script>
-    <% } else if (theme.duoshuo_shortname) { %>
+    <% } else if (theme.duoshuo_shortname && post.id !== undefined ) { %>
         <script type="text/javascript">
             var duoshuoQuery = {short_name:'<%= theme.duoshuo_shortname %>'};
             (function() {

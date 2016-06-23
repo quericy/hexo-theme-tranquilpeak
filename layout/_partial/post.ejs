@@ -50,7 +50,7 @@
         <% if (post.comments) { %>
             <% if (theme.disqus_shortname) { %>
                 <%- partial('post/disqus') %>
-            <% } else if (theme.duoshuo_shortname) { %>
+            <% } else if (theme.duoshuo_shortname && post.id !== undefined ) { %>
                 <%- partial('post/duoshuo') %>
             <% } %>
         <% } %>
