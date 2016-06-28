@@ -37,25 +37,25 @@ sidebar:
             icon: home
         categories:
             title: global.categories
-            url: /categories
+            url: /categories/
             icon: bookmark
         tags:
             title: global.tags
-            url: /tags
+            url: /tags/
             icon: tags
         archives:
             title: global.archives
-            url: /archives
+            url: /archives/
             icon: archive
         search:
             title: global.search
-            url: /#search
+            url: /search/
             icon: search
             # `st-search-show-outputs` classes are used to open swiftype search window
             class: st-search-show-outputs
         about:
             title: global.about
-            url: /about
+            url: /about/
             icon: question
     author_links:
         github:
