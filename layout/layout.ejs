@@ -18,7 +18,7 @@
             <%- partial('_partial/header', {sidebarBehavior: sidebarBehavior}) %>
             <%- partial('_partial/sidebar', {sidebarBehavior: sidebarBehavior}) %>
             <%- partial('_partial/post/header-cover', {post: page, sidebarBehavior: sidebarBehavior}) %>
-            <div id="main" data-behavior="<%= sidebarBehavior %>"
+            <div id="main" data-behavior="<%= sidebarBehavior %>" style="background-color: rgba(255, 255, 255, 0.85);"
                  class="<%= (page.coverImage ? 'hasCover' : '') %>
                         <%= (page.coverMeta === 'out' ? 'hasCoverMetaOut' : 'hasCoverMetaIn') %>
                         <%= (page.coverCaption ? 'hasCoverCaption' : '') %>">
