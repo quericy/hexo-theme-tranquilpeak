@@ -11,11 +11,13 @@
         <%- partial('category', {categories: post.categories})%>
     <% } %>
     <% if( post.updated && post.date && post.updated > post.date ) { %>
-        &nbsp;|&nbsp; 最后更新于
+        &nbsp;|&nbsp; 更新于
+        <time itemprop="dateUpdated" content="<%= post.updated %>">
         <% if (post.lang) { %>
 		    <%= post.updated.locale(post.lang).format(__('date_format')) %>
     	<% } else { %>
 		    <%= post.updated.locale(page.lang).format(__('date_format')) %>
     	<% } %>
+        </time>
     <% } %>
 </div>
