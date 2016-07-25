@@ -5,9 +5,17 @@
     	<% } else { %>
 		    <%= post.date.locale(page.lang).format(__('date_format')) %>
     	<% } %>
-    </time>
+    </time>    
     <% if ((post.categories) && (post.categories.length > 0)) { %>
         <span><%= __('post.categorized_in')  %> </span>
         <%- partial('category', {categories: post.categories})%>
+    <% } %>
+    <% if( post.updated && post.date && post.updated > post.date ) { %>
+        &nbsp;|&nbsp; 最后更新于
+        <% if (post.lang) { %>
+		    <%= post.updated.locale(post.lang).format(__('date_format')) %>
+    	<% } else { %>
+		    <%= post.updated.locale(page.lang).format(__('date_format')) %>
+    	<% } %>
     <% } %>
 </div>
