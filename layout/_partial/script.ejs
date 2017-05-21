@@ -8,6 +8,8 @@
                  this.page.url = '<%= post.permalink %>';
                  <% if (post.disqusIdentifier) { %>
                     this.page.identifier = '<%= post.disqusIdentifier %>';
+                 <% } else if (post.id !== undefined ) { %>
+                    this.page.identifier = '<%= post.id %>';
                  <% } else { %>
                     this.page.identifier = '<%= post.path %>';
                  <% } %>                 
