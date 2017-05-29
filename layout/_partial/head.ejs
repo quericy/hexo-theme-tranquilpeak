@@ -149,4 +149,10 @@
     <!--STYLES END-->
     <%- partial('google-analytics') %>
     <%- partial('baidu-analytics') %>
+    <!--Disqus-->
+    <% if (post.comments) { %>
+        <% if (theme.disqus_shortname) { %>
+            <link rel="stylesheet" href="https://quericy-disqus.azurewebsites.net/disqus-api.css" />
+        <% } %>
+    <% } %>
 </head>

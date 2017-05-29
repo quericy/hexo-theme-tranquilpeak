@@ -50,7 +50,7 @@
         <%- partial('post/actions', {postContent: postContent}) %>
         <% if (post.comments) { %>
             <% if (theme.disqus_shortname) { %>
-                <%- partial('post/disqus') %>
+                <%- partial('post/disqus-proxy') %>
             <% } else if (theme.duoshuo_shortname && post.id !== undefined ) { %>
                 <%- partial('post/duoshuo') %>
             <% } %>
